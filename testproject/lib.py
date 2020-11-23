@@ -47,6 +47,19 @@ def clean_data(data):
     data.loc[:, 'Frequency'] = data['Frequency'].map(drows)
     return data
 
+def try_me():
+    name = input("Hey, what's your name?\n> ")
+    print(f"Happy to have made your acquaintance {name}!")
+
+    result = input("Would you like the cookie or the bottle?")
+    if result == "cookie":
+        print("The cookie made you very very tall.")
+        return
+    if result == "bottle":
+        print("Drinking from that bottle made you very very small.")
+        return
+    else:
+        print("Don't be so picky! Try typing bottle or cookie next time!")
 
 if __name__ == '__main__':
     # For introspections purpose to quickly get this functions on ipython
